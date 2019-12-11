@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photos -- Restaurant</title>
+    <link rel="stylesheet" href="css/photos.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600|Montserrat:300,400,600"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+       <div class="header-container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="main.html">PALATO</a>
+                </div>
+                <ul>
+                    <li><a href="aboutRes.html">About us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="photos.html">Photo Gallery</a></li>
+                    <li><a href="reservation.html">Reservations</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+
+                </ul>
+            </nav>
+
+            <div class = "header">
+                <h2>Gallery</h2>
+            </div>
+        
+        </div>
+<!--
+        <div class="adv">
+            <button class="advButton3">View</button>
+            <button id="stop">Stop</button>
+            <br>
+            <div id="advContainer3" style="background-image: url(images/pizza.jpg); width: 300px; height: 200px; background-position: center; background-size: cover; display: none">
+                <h3 style="color:white">In Litali delicious pizza on thin crust</h3>
+                <p style="color:white">Litali is new with traditional italianic kitchen</p>
+                <button>Reserve a table</button>
+            </div>
+        </div>
+-->
+   
+           <div class="gallery-section">
+              <div class="inner-width">
+                <h1>Our Gallery</h1>
+                <div class="border"></div>
+                <div class="gallery">
+
+                  <a href="/images/main/gallery/car1.jpg" class="image">
+                    <img src="/images/main/gallery/car1.jpg" alt="">
+                  </a>
+
+                  <a href="/images/main/gallery/car2.jpg" class="image">
+                    <img src="/images/main/gallery/car2.jpg" alt="">
+                  </a>
+                  <a href="/images/main/barManu.jpg" class="image">
+                    <img src="/images/main/barManu.jpg" alt="">
+                  </a>
+
+                  <a href="/images/main/gallery/car4.jpg" class="image">
+                    <img src="/images/main/gallery/car4.jpg" alt="">
+                  </a>
+
+
+                  <a href="/images/main/dessert2.jpg" class="image">
+                    <img src="/images/main/dessert2.jpg" alt="">
+                  </a>
+
+                  <a href="/images/main/gallery/car6.jpg" class="image">
+                    <img src="/images/main/gallery/car6.jpg" alt="">
+                  </a>
+
+                  <a href="/images/main/drink2.jpg" class="image">
+                    <img src="/images/main/drink2.jpg" alt="">
+                  </a>
+
+                  <a href="/images/main/drink.jpg" class="image">
+                    <img src="/images/main/drink.jpg" alt="">
+                  </a>
+
+                </div>
+              </div>
+        </div>
+
+    <div class="footer">
+       <div class="foot-container">
+            <div class="contact">
+                <h3>Contact</h3>
+                <p>206-555-7890</p>
+                <p>123 Fake Street</p>
+                <p>Seattle, WA 00000</p>
+                <p class="email"><a href="#">example@example.com</a></p>
+            </div>
+
+            <div class="logo">
+                <h2>&nbsp;PALATO&nbsp;</h2>
+                <div class="links">
+                    <ul class="social-icons">
+                        <li><a href="http://www.facebook.com"><img src="images/main/links/brand.png" /></a></li>
+                        <li><a href="http://www.twitter.com"><img src="images/main/links/twitter%20(1).png" /></a></li>
+                        <li><a href="http://www.youtube.com"><img src="images/main/links/instagram%20(1).png" /></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="contact">
+                <h3>Hours</h3>
+                <p>Mon–Wed  6–11</p>
+                <p>Thu–Sat  4–12</p>
+                <p>Sun  3–10</p>
+                <p><a href="reservation.html">Make a reservation</a></p>
+            </div>
+        </div>
+    </div>
+     
+      <script>
+        $(".gallery").magnificPopup({
+          delegate: 'a',
+          type: 'image',
+          gallery:{
+            enabled: true
+          }
+        });
+      </script>
+    
+        
+    
+    </div>
+    </body>
+</html>

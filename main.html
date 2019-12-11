@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PALATO</title>
+    <link rel="stylesheet"  href='css/main.css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src= "js/advertisment.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600|Montserrat:300,400,600"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+<div class="conatiner">
+   <div class="header-container">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="main.html">PALATO</a>
+                <svg height="100" width="100">
+                      <polygon points="50,5 25,60 80,25 15,25 75,60" style="fill:darkorange;fill-rule:nonzero;"/>
+                      Sorry, your browser does not support inline SVG.
+                </svg>
+            </div>
+            <ul>
+                <li><a href="aboutRes.html">About us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="photos.html">Photo Gallery</a></li>
+                <li><a href="reservation.html">Reservations</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="contacts.html">Contacts</a></li>
+
+            </ul>
+        </nav>
+    
+        
+        <div class = "header">
+            <h3>Best New York restaurant</h3>
+            <div class="titles">
+                <h1 onmousemove="eat()" onmouseout="main()" id="eat">Eat</h1>
+                <h1 onmousemove="drink()" onmouseout="main()" id="drink">Drink</h1>
+                <h1 onmousemove="visit()" onmouseout="main()" id='visit'>Visit</h1>
+            </div>    
+        </div>
+        
+        
+    </div>
+    
+<!--
+    <hr>
+    <div class="adv">
+        <button class="advButton">Advertisment</button>
+        <div id="advContainer">
+            <br>
+            <img src="images/dish.jpg" width ="200px">
+            <h3>Order delicious foods.</h3>
+            <p>www.mySite.com</p>
+            <button>Order Now</button>
+        </div>
+    </div>
+-->
+        
+    <div class="about-container">
+       <div class="about-stories">
+           <img class="story" src="images/main/toca-weekend-brunch.jpg" alt="">
+           <img class="story" src="images/main/homepage-tiles-cheese-cave.jpg" alt="">
+           <img class="story" src="images/main/toca-private-dining-room.jpg" alt="">
+       </div>
+        <div class="about">
+            <h2>About Espresso</h2>
+            <p>TOCA offers handcrafted Italian cuisine complemented by seasonal flavours and locally-sourced produce. Located in the heart of Toronto’s Performing Arts & Theatre District, TOCA occupies the mezzanine level of The Ritz-Carlton hotel. TOCA is proud to collaborate with Chef Oliver Glowig, one of Rome’s most celebrated culinary leaders.</p>
+        </div>
+    </div>
+    
+    
+    <div class="audio"> 
+       <div id="bg"></div>
+        <div id="main">
+            <div id="image">
+                <img src="/images/main/city.jpg"/>
+            </div>
+            <div id="player">
+                <div id="songTitle">Demo</div>
+                <div id="buttons">
+                   <audio id="audio"></audio>
+                    <button id="prevMusic" onclick="prevMusic()"><img src="/images/main/controls/Pre.png" height="90%" width="90%"/></button>
+                    <button id="play" onclick="playOrPauseSong()"><img src="/images/main/controls/Pause.png"/></button>
+                    <button id="nextMusic" onclick="nextMusic()"><img src="/images/main/controls/Next.png" height="90%" width="90%"/></button>
+                </div>
+                
+                <div id="seek-bar">
+                    <div id="fill"></div>
+                    <div id="handle"></div>
+                </div>
+            </div>
+        </div>
+    </div> 
+      
+    
+    <div class="menu">
+        <h2>Menu of Restaurant</h2>
+        <div class="menuCategories">
+            <div class="categories">
+                <a href=""><img class="menuImage" src="images/main/mainMenu.jpg"></a>
+                <h3>Main menu</h3>
+             </div>
+            <div class="categories">
+                <a href=""><img  class="menuImage" src="images/main/barManu.jpg"></a>
+                <h3>Bar menu</h3>
+            </div >
+            <div class="categories">
+                <a href=""><img class="menuImage" src="images/main/dessert2.jpg"></a>
+                <h3>Dessert</h3>
+            </div>
+        </div>
+        <div class="button">
+            <button class="btn btn-orange">View menus</button>
+        </div>
+    </div>
+    
+    
+    <div class="reservation">
+       <div class="res-container">
+            <h2>EAT TOGETHER</h2>
+            <p>Every plate achieves that elusive, cuisine-defining balance of sweet, salty, and sour — even dessert.</p>
+            <button class="btn btn-white">Make a reservation</button>
+        </div>
+    </div>
+    
+   
+    <div class="gallery">
+        <div class="slider">
+            <div class="slide current">
+                <div class="content">
+                    <h1>Slide One</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum et fugit perferendis blanditiis nulla dolore!</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <h1>Slide Two</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum et fugit perferendis blanditiis nulla dolore!</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <h1>Slide Three</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum et fugit perferendis blanditiis nulla dolore!</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <h1>Slide Four</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum et fugit perferendis blanditiis nulla dolore!</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <h1>Slide Five</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum et fugit perferendis blanditiis nulla dolore!</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <h1>Slide Six</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum et fugit perferendis blanditiis nulla dolore!</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <h1>Slide Seven</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum et fugit perferendis blanditiis nulla dolore!</p>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev"><i class="fas fa-arrow-left"></i></button>
+            <button id="next"><i class="fas fa-arrow-right"></i></button>
+        </div>
+    </div>
+    
+    <div class="footer">
+       <div class="foot-container">
+            <div class="contact">
+                <h3>Contact</h3>
+                <p>206-555-7890</p>
+                <p>123 Fake Street</p>
+                <p>Seattle, WA 00000</p>
+                <p class="email"><a href="#">example@example.com</a></p>
+            </div>
+
+            <div class="logo">
+                <h2>&nbsp;PALATO&nbsp;</h2>
+                <div class="links">
+                    <ul class="social-icons">
+                        <li><a href="http://www.facebook.com"><img src="images/main/links/brand.png" /></a></li>
+                        <li><a href="http://www.twitter.com"><img src="images/main/links/twitter%20(1).png" /></a></li>
+                        <li><a href="http://www.youtube.com"><img src="images/main/links/instagram%20(1).png" /></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="contact">
+                <h3>Hours</h3>
+                <p>Mon–Wed  6–11</p>
+                <p>Thu–Sat  4–12</p>
+                <p>Sun  3–10</p>
+                <p><a href="reservation.html">Make a reservation</a></p>
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript">
+    
+        var songs = ["City of Stars (Duet ft. Ryan Gosling, Emma Stone).mp3","Imagine Dragons - Radioactive.mp3","Hozier - Take Me To Church (Official Video).mp3","Shawn Mendes, Camila Cabello - Señorita.mp3"];
+        var poster = ["/images/main/city.jpg","/images/main/RadioActive.jpg","/images/main/Church.jpg","/images/main/senorita.jpg"];
+        
+        var songTitle = document.getElementById("songTitle");
+        var fillBar = document.getElementById("fill");
+        
+        var song = document.getElementById("audio");
+        var currentSong = 0;    // it point to the current song
+        
+        const bg = document.getElementById("bg");
+        
+        window.onload = playSong;   // it will call the function playSong when window is load
+        
+        function playSong(){
+            
+            song.src = songs[currentSong];  //set the source of 0th song 
+            
+            songTitle.textContent = songs[currentSong]; // set the title of song
+            
+            song.play();    // play the song
+        }
+        
+        function playOrPauseSong(){
+            
+            if(song.paused){
+                song.play();
+                $("#play img").attr("src","/images/main/controls/Pause.png");
+            }
+            else{
+                song.pause();
+                $("#play img").attr("src","/images/main/controls/Play.png");
+            }
+        }
+        
+        song.addEventListener('timeupdate',function(){ 
+            
+            var position = song.currentTime / song.duration;
+            
+            fillBar.style.width = position * 100 +'%';
+        });
+        
+    
+        function nextMusic(){
+            
+            currentSong++;
+            if(currentSong >= songs.length){
+                currentSong = 0;
+            }
+            playSong();
+            $("#play img").attr("src","/images/main/controls/Pause.png");
+            $("#image img").attr("src",poster[currentSong]);
+        
+        }
+    
+        function prevMusic(){
+            
+            currentSong--;
+            if(currentSong < 0){
+                currentSong = songs.length - 1;
+            }
+            playSong();
+            $("#play img").attr("src","/images/main/controls/Pause.png");
+            $("#image img").attr("src",poster[currentSong]);
+            
+        }
+        
+    </script>
+    <script src="js/main.js"></script>
+</div>
+</body>
+</html>
+
+
+
+
+
+

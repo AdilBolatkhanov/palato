@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts -- Restaurant</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src= "js/advertisment.js"></script>
+    <link rel="stylesheet" href="/css/contacts.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600|Montserrat:300,400,600"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+    <div class="container">
+         <div class="header-container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="main.html">PALATO</a>
+                </div>
+                <ul>
+                    <li><a href="aboutRes.html">About us</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="photos.html">Photo Gallery</a></li>
+                    <li><a href="reservation.html">Reservations</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contacts.html">Contacts</a></li>
+
+                </ul>
+            </nav>
+
+            <div class = "header">
+            <p id="head-title">CONTACTS</p>
+            <p>All locations open Mon – Thu, 8am – 11pm & Fri – Sun, 11am – 11pm</p>
+        </div>
+        
+        </div>
+        
+       
+        
+<!--
+        <div class="adv">
+            <button class="advButton4">Animate</button>
+            
+            
+            <div id="advContainer4" style="position: relative">
+                <br>
+                <img id="advPhoto" src="images/dish.jpg" width ="200px">
+                <h3>Order delicious foods.</h3>
+                <p>www.mySite.com</p>
+                <button>Order Now</button>
+            </div>
+        </div>
+        
+-->
+       <div class="mapOuter">
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11548.809425983405!2d-79.3893053060686!3d43.64395806402198!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34d230bd4305%3A0xf6eccd483f286a98!2sSt%20Andrew!5e0!3m2!1sru!2sus!4v1575049473056!5m2!1sru!2sus" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        </div>
+        </div>
+        
+        <div class="info">
+            <div class="locations">
+                <div class="item">
+                    <h2>BROOKLYN</h2>
+                    <p>376 Fake Street</p>
+                        <p>Brooklyn, NY — 11231</p>
+                       <p>(718) 555-1234</p>
+                </div>
+                <div class="item">
+                    <h2>QUEENS</h2>
+                    <p>47-33 Fake Street</p>
+                    <p>Long Island City, NY — 11101</p>
+                    <p>(347) 555-1234</p>
+                </div>
+                <div class="item">
+                    <h2>FOOD TRUCK</h2>
+                    <p>25 Fake Street</p>
+                   <p>New York, NY — 10003</p>
+                    <p>(917) 555-1234</p>
+                </div>
+            </div>
+            
+            
+            <div class="questions">
+                <div class="queryContainer">
+                   <div class="item">
+                        <h2>MEDIA INQUIRIES</h2>
+                        <p>(718) 555-1234</p>
+                        <a href="#">placeholder@example.com</a>
+                    </div>
+                    <div class="item">
+                        <h2>PUBLIC RELATIONS</h2>
+                        <p>(718) 555-1234</p>
+                        <a href="#">placeholder@example.com</a>
+                    </div>
+                </div>
+                <div class="formContainer">
+                    <p>For all other questions, please use the form.</p>
+                    <div id="form">
+                
+                        <form action="process.php">
+
+                            <div class="input-item">
+                                <label for="name">Name *</label>
+                                <div class="inputCon">
+                                    <div class="nameInp">
+                                        <input type="text" name="name"  autocomplete="on" maxlength="100">
+                                        <p>First Name</p>
+                                    </div>
+                                     <div class="surnameInp">
+                                        <input type="text" name="name"  autocomplete="on" maxlength="100">
+                                        <p>Last Name</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="input-item">
+                                <label for="email">Email Address *</label>
+                                <div class="inputCon">
+                                    <input type="email" name="email" autocomplete="on">
+                                </div>
+                            </div>
+
+                            <div class="input-item">
+                                <label for="subject">Subject *</label>
+                                <div class="inputCon">
+                                    <input type="text" name="subject">
+                                </div>
+                            </div>
+                            
+                            <div class="input-item">
+                                <label for="message">Message *</label>
+                                <div class="inputCon">
+                                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                                </div>
+
+                            </div>
+
+                            <div>
+                                <input id="submit" type="submit" name="submit" value="Submit">
+                            </div>
+
+
+                        </form>
+            
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+       <div class="foot-container">
+            <div class="contact">
+                <h3>Contact</h3>
+                <p>206-555-7890</p>
+                <p>123 Fake Street</p>
+                <p>Seattle, WA 00000</p>
+                <p class="email"><a href="#">example@example.com</a></p>
+            </div>
+
+            <div class="logo">
+                <h2>&nbsp;PALATO&nbsp;</h2>
+                <div class="links">
+                    <ul class="social-icons">
+                        <li><a href="http://www.facebook.com"><img src="images/main/links/brand.png" /></a></li>
+                        <li><a href="http://www.twitter.com"><img src="images/main/links/twitter%20(1).png" /></a></li>
+                        <li><a href="http://www.youtube.com"><img src="images/main/links/instagram%20(1).png" /></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="contact">
+                <h3>Hours</h3>
+                <p>Mon–Wed  6–11</p>
+                <p>Thu–Sat  4–12</p>
+                <p>Sun  3–10</p>
+                <p><a href="reservation.html">Make a reservation</a></p>
+            </div>
+        </div>
+    </div>
+        
+    </div>
+    </body>
+</html>
